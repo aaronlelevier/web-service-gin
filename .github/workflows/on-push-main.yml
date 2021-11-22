@@ -1,0 +1,10 @@
+name: on push main
+on:
+  push:
+    branches:
+    - main
+jobs:
+  on-push-main:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "You just pushed to branch ${{ github.ref }}"
