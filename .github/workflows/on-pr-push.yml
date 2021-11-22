@@ -1,6 +1,8 @@
 name: on pr push
 on:
-  pull_request: [push]
+  pull_request:
+    branches:
+      - main
 
 jobs:
   on-pr-push:
